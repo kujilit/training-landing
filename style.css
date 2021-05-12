@@ -28,10 +28,10 @@
     }
 
     .nav_point{
-        font-style: none;
+        text-decoration: none;
         padding: 10%;
         color: #070707;
-        font-size: 2em;
+        font-size: 3em;
         font-weight: bold;
     }
 
@@ -67,12 +67,13 @@
     }
 
     .phone_menu{
-        width: 10%;
         position: absolute;
         right: 0;
-        margin: 2% 5% 0 0;
-        background: url(../images/menu_button.svg) no-repeat top right;
-        border: none; 
+        margin: 0 5% 0 0;
+        border: none;
+        color: #070707;
+        text-decoration: none;
+        font-size: 4.5em;
     }
 
     .phone_hro_img{
@@ -235,7 +236,7 @@
         height: auto;
     }
     .portfolio a{
-        font-style: none;
+        text-decoration: none;
         margin-bottom: 15%;
     }
 
