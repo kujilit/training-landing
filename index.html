@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <nav class="burger" id="burger">
+        <a href="#" class="nav_point" id="menu_close" onclick="off()">X</a>
+        <a href="#home" class="nav_point" onclick="off()">Home</a>
+        <a href="#about" class="nav_point" onclick="off()">About me</a>
+        <a href="#skills" class="nav_point" onclick="off()">Skills</a>
+        <a href="#portfolio" class="nav_point" onclick="off()">Portfolio</a>
+        <a href="#contacts" class="nav_point" onclick="off()">Contacts</a>
+        <span class="des_language"><span class="lang_ru">RU</span> | ENG</span>
+ </nav>
+ <a href="#" class="phone_menu" onclick="on()">.</a>
+        <script>
+            function on() {
+                document.getElementById("burger").style.display = "flex";
+            }
+
+            function off() {
+                document.getElementById("burger").style.display = "none";
+            }
+        </script>
+<div class="main">
+    <div id="home" class="hero_block">
+        <div class="navigation_bar">
+            <nav>
+                <a href="#about" class="nav_point">About me</a>
+                <a href="#skills" class="nav_point">Skills</a>
+                <a href="#portfolio" class="nav_point">Portfolio</a>
+                <a href="#contacts" class="nav_point">Contacts</a>
+            </nav>
+        </div>
+    <div class="description">
+        <span id="des_name">Denis<br>Novik</span>
+        <span id="des_about">UX | UI designer<br>24 years old, Minsk</span>
+        <span id="des_language"><span id="lang_ru">RU</span> | ENG</span>
+    </div>
+        <img src="./images/portrait.png" alt="1" class="desktop_hro_img">
+        <img src="./images/hero_block_img.svg" alt="1" class="phone_hro_img">
+    </div>
+    <div id="about" class="desktop_about_me">
+        <span class="about_title">About me</span>
+        <span class="about_text">Hi, I'm Denis – UX/UI designer from Minsk.<br>I'm interested in design and everything connected with it.</span>
+        <span class="about_text"> I'm studying at courses "Web and mobile design<br>interfaces" in IT-Academy.</span>
+        <span class="about_text_last"> Ready to implement excellent projects<br>with wonderful people.</span>
+    </div>
+    <div id="about" class="phone_about_me">
+        <span class="about_title">About me</span>
+        <span class="about_text">Hi, I'm Denis – UX/UI designer from<br>Minsk. I'm interested in design and<br>everything connected with it.</span>
+        <span class="about_text"> I'm studying at courses<br>"Web and mobile design interfaces"<br>in IT-Academy.</span>
+        <span class="about_text about_text_last"> Ready to implement excellent<br>projects with wonderful people.</span>
+    </div>
+    <div id="skills" class="skills">
+        <div class="skills_text">
+            <span class="skills_text_title">Skills</span>
+            <span class="skills_text_text">I work in such programs as</span>
+        </div>
+        <div class="skills_blocks">
+            <div class="skill_block">
+                <img src="./images/Ps.svg" alt="" class="skill_logo">
+                <span class="logo_sub">Adobe<br>Photoshop</span>
+                <div class="rating">
+                    <img src="./images/black_star.svg" alt="" class="star">
+                    <img src="./images/black_star.svg" alt="" class="star">
+                    <img src="./images/black_star.svg" alt="" class="star">
+                    <img src="./images/black_star.svg" alt="" class="star">
+                    <img src="./images/grey_star.svg" alt="" class="star">
+                </div>
+            </div>
+            <div class="skill_block">
+                <img src="./images/Ai.svg" alt="" class="skill_logo">
+                <span>Adobe<br>Illustrator</span>
+                <div class="rating">
+                    <img src="./images/black_star.svg" alt="" class="star">
+                    <img src="./images/black_star.svg" alt="" class="star">
+                    <img src="./images/black_star.svg" alt="" class="star">
+                    <img src="./images/grey_star.svg" alt="" class="star">
+                    <img src="./images/grey_star.svg" alt="" class="star">
+                </div>
+            </div>
+            <div class="skill_block">
+                <img src="./images/Ae.svg" alt="" class="skill_logo">
+                <span>Adobe<br>After Effects</span>
+                <div class="rating">
+                    <img src="./images/black_star.svg" alt="" class="star">
+                    <img src="./images/black_star.svg" alt="" class="star">
+                    <img src="./images/black_star.svg" alt="" class="star">
+                    <img src="./images/black_star.svg" alt="" class="star">
+                    <img src="./images/grey_star.svg" alt="" class="star">
+                </div>
+            </div>
+            <div class="skill_block">
+                <img src="./images/Figma.svg" alt="" class="skill_logo">
+                <span>Figma<br>	&#173;</span>
+                <div class="rating figma">
+                    <img src="./images/black_star.svg" alt="" class="star">
+                    <img src="./images/black_star.svg" alt="" class="star">
+                    <img src="./images/black_star.svg" alt="" class="star">
+                    <img src="./images/black_star.svg" alt="" class="star">
+                    <img src="./images/grey_star.svg" alt="" class="star">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio" class="portfolio">
+        <span class="portfolio_title">Portfolio</span>
+        <div class="portfolio_block">
+            <img src="./images/portfolio_fas.png" alt="" class="portfolio_block_img">
+            <a href="https://ru.levi.com"><span class="port_text">Online fashion store - Homepage</span></a>
+        </div>
+        <div class="portfolio_block">
+            <img src="./images/portfolio_reebok.png" alt="" class="portfolio_block_img">
+            <a href="https://www.reebok.ru"><span class="port_text">Reebok Store - Concept</span></a>
+        </div>
+        <div class="portfolio_block">
+            <img src="./images/portfolio_braun.png" alt="" class="portfolio_block_img">
+            <a href="https://braun-russia.ru"><span class="port_text">Braun Landing Page - Concept</span></a>
+        </div>
+    </div>
+    <div id="contacts" class="contacts">
+        <span class="contacts_title">Contacts<br></span>
+        <span class="contacts_subscription">Want to know more or just chat?<br>You are welcome!</span>
+        <a href="http://vk.com/" target="_blank" class="send_button"><div><span>Send message</span></div></a>
+        <div class="contact_logos">
+            <a href="https://ru.linkedin.com" target="_blank"><img src="./images/lin_logo.svg" alt="" class="cont_logo"></a>
+            <a href="https://instagram.com" target="_blank"><img src="./images/inst_logo.svg" alt="" class="cont_logo"></a>
+            <a href="https://www.behance.net" target="_blank"><img src="./images/behance_logo.svg" alt="" class="cont_logo"></a>
+            <a href="https://dribbble.com" target="_blank"><img src="./images/dribble_logo.svg" alt="" class="cont_logo"></a>
+        </div>
+        <div class="like_me">
+            <span>Like me on<br><a href="https://ru.linkedin.com" target="_blank">LinkedIn</a>,
+                <a href="https://instagram.com" target="_blank">Instagram</a>,
+                <a href="https://www.behance.net" target="_blank">Behance</a>,
+                <a href="https://dribbble.com" target="_blank">Dribble</a></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
