@@ -5,7 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light-theme">
  <nav class="burger" id="burger">
         <a href="#" class="nav_point" id="menu_close" onclick="off()">X</a>
         <a href="#home" class="nav_point" onclick="off()">Home</a>
@@ -13,7 +13,9 @@
         <a href="#skills" class="nav_point" onclick="off()">Skills</a>
         <a href="#portfolio" class="nav_point" onclick="off()">Portfolio</a>
         <a href="#contacts" class="nav_point" onclick="off()">Contacts</a>
-        <span class="des_language"><span class="lang_ru">RU</span> | ENG</span>
+        <div class="switcher"><input type="checkbox" id="switcher__btn" name="theme">
+             <label for="switcher__btn"></label>
+        </div>
  </nav>
  <a href="#" class="phone_menu" onclick="on()">≡</a>
         <script>
@@ -37,7 +39,10 @@
     <div class="description">
         <span id="des_name">Denis<br>Novik</span>
         <span id="des_about">UX | UI designer<br>24 years old, Minsk</span>
-        <span id="des_language"><span id="lang_ru">RU</span> | ENG</span>
+        <div class="switcher" id="switcher__btn__desctop">
+            <input type="checkbox" id="switcher__btn" name="theme">
+            <label for="switcher__btn"></label>
+        </div>
     </div>
         <img src="./images/portrait.png" alt="1" class="desktop_hro_img">
         <img src="./images/hero_block_img.svg" alt="1" class="phone_hro_img">
@@ -139,5 +144,11 @@
         </div>
     </div>
 </div>
+ <script>
+     const checkbox = document.querySelector('input');
+     checkbox.addEventListener('change', () => {
+         document.body.classList.toggle("dark-theme");
+     });
+ </script>
 </body>
 </html>
