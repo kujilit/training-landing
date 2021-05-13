@@ -1,4 +1,4 @@
-@media (max-width:770px){
+@media only screen and (min-width: 100px) and (max-width:770px){
     *{
         font-family: "Gilroy", sans-serif;
     }
@@ -66,19 +66,17 @@
         display: none;
     }
 
-    .phone_menu{
+    .phone_menu {
         position: absolute;
         right: 0;
-        margin: 0 5% 0 0;
-        border: none;
-        color: #070707;
+        margin: -4% 5% 0 0;
+        color: #070707;;
         text-decoration: none;
-        font-size: 4.5em;
+        font-size: 4em;
     }
 
     .phone_hro_img{
         display: block;
-        margin: auto;
         width: 90%;
         margin: 0 5% 20% 5%
     }
@@ -108,7 +106,7 @@
         justify-content: space-around;
         color: #070707;
         padding: 7% 5% 0 5%;
-        background-color: #F6F6F6;
+        background-color: #f6f6f6;
     }
 
     .about_title {
@@ -179,9 +177,11 @@
         justify-content: space-around;
         align-self: flex-end;
         margin-top: 25%;
+        height: 5%;
     }
 
     .star {
+        z-index: 1;
         display: block;
         width: 30%;
         height: auto;
