@@ -404,12 +404,13 @@
     }
 
     nav {
+        padding-top: 3%;
         font-family: "Gilroy", sans-serif;
         font-weight: bold;
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid #828282;
-        margin: 3% 16.5% 3% 17%;
+        margin: 0 16.5% 3% 17%;
         color: var(--theme-font-darker);
     }
 
@@ -569,11 +570,14 @@
 
     .skills_blocks {
         display: flex;
-        width: 100%;
+        width: 90%;
         justify-content: space-evenly;
         flex-direction: row;
-        margin: 6% 0 5% 0;
         align-items: baseline;
+        background-color: var(--card-bg);
+        border-radius: 90px;
+        margin: 5%;
+        padding: 2%;
     }
 
     .skill_block {
@@ -582,7 +586,6 @@
         align-items: center;
         justify-content: space-between;
         text-align: center;
-        color: var(--theme-font-darker);
     }
 
     .rating {
@@ -599,7 +602,7 @@
         margin: 0 5% 0 5%;
     }
 
-    .figma {
+    .rating .figma {
         align-self: flex-end;
     }
 
