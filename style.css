@@ -602,8 +602,11 @@
         margin: 0 5% 0 5%;
     }
 
-    .rating .figma {
+    .figma {
+        display: flex;
+        justify-content: space-around;
         align-self: flex-end;
+        margin-top: 45%;
     }
 
     .skill_logo {
